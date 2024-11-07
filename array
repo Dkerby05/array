@@ -1,0 +1,19 @@
+public class RetailStoreInventory {
+
+    public static void main(String[] args) {
+        // Define the arrays for quantities and prices
+        int[] quantities = {10, 15, 8, 20, 30, 5, 12, 7, 18, 25};  // Example quantities for 10 products
+        double[] prices = {19.99, 5.49, 3.99, 12.99, 2.49, 8.99, 15.49, 7.89, 9.99, 11.49};  // Prices for 10 products
+        
+        // Variable to keep track of total value of stock
+        double totalValue = 0;
+        
+        // Loop through each product and calculate the total value
+        for (int i = 0; i < quantities.length; i++) {
+            totalValue += quantities[i] * prices[i];  // Multiply quantity by price for each product
+        }
+
+        // Output the total value of all items in stock
+        System.out.printf("The total value of all items in stock is: $%.2f%n", totalValue);
+    }
+}
